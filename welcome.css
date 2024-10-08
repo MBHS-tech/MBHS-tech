@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto',
+ sans-serif; background-color: #f0f0ff;
+  margin: 0; padding: 0; 
+} 
+.navbar {
+    background-color: #e0e0ff;
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.navbar img {
+    height: 40px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #333; 
+    margin: 0 15px; font-weight: 500;
+}
+.navbar a:hover{
+    background-color: #3b3b98;
+    transition: 0.9s;
+    text-decoration: underline;
+    color: white;
+}
+.container { 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: calc(100vh - 60px); 
+}
+.login-box { 
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 20px;
+    width: 800px;
+}
+.login-form {
+    flex: 1; 
+    padding: 20px; 
+}
+.login-form h2 {
+    color: #4a4a8a;
+    font-weight: 700; 
+    margin-bottom: 10px;
+}
+.login-form p {
+    color: #666;
+    margin-bottom: 20px;
+} 
+.login-form button {
+    background-color: #fff;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    color: #666; 
+    cursor: pointer; 
+    display: block; 
+    font-size: 16px; 
+    margin-bottom: 20px; 
+    padding: 10px; 
+    width: 100%; 
+}
+.login-form button i {
+    margin-right: 10px; 
+}
+.login-form .divider { 
+   text-align: center; 
+   margin: 20px 0; 
+   color: #ccc; 
+}
+.login-form input { 
+   border: 1px solid #ccc; 
+   border-radius: 5px; 
+   display: block; 
+   font-size: 16px; 
+   margin-bottom: 20px; 
+   padding: 10px; 
+   width: 100%; 
+}
+.login-form .login-btn { 
+   background-color: #4a4a8a; 
+   border: none; 
+   color: #fff; 
+   cursor: pointer; 
+   font-size: 16px; 
+   padding: 10px; 
+   width: 100%; 
+}
+.login-form .signup-link { 
+   text-align: center; 
+   color: #666; 
+}
+.login-form .signup-link a { 
+   color: #4a4a8a; 
+   text-decoration: none; 
+}
+.logo-box { 
+   flex: 1; 
+   display: flex; 
+   justify-content: center; 
+   align-items: center;
+} 
+.logo-box img { 
+   max-width: 100%; 
+   border: 1px solid #ccc; 
+   border-radius: 10px; 
+}

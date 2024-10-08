@@ -1,0 +1,389 @@
+<html>
+ <head>
+  <title>
+   Harya - Find Your Perfect Career Match
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="
+  stylesheet" href="hary.css">
+ </head>
+ <body>
+  <header class="header">
+   <img alt="Harya Logo" height="40" src="logo.jpg" width="40"/>
+   <nav class="nav">
+    <a href="#">
+     Home
+    </a>
+    <a href="#">
+     Job
+    </a>
+    <a href="#">
+     Candidate
+    </a>
+    <a href="#">
+     About
+    </a>
+   </nav>
+   <div class="auth-buttons">
+    <button class="login" onclick="openModal('login')"> 
+     Login
+    </button>
+    <button class="signup" onclick="openModal('signup')"> 
+     Sign Up
+    </button>
+    </div>
+  </header>
+  <section class="hero">
+   <h1>
+    Find Your Perfect Career <br> Match
+   </h1>
+   <p class="yoyo">
+    Connect with top employers and discover opportunities that align with <br> skills and aspiration.
+   </p>
+   <div class="search-filter">
+    <input type="text" placeholder="Find Your Next Star">
+   </div>
+   <img alt="Career Match Image" height="200" src="prof.png" width="300"/>
+  </section>
+  <section class="section">
+   <h2>
+    Why Choose Harya
+   </h2>
+   <div class="stats">
+    <div class="stat">
+     <h3>
+      500+
+     </h3>
+     <p>
+      Employees Hire Per Week
+     </p>
+    </div>
+    <div class="stat">
+     <h3>
+      10,000+
+     </h3>
+     <p>
+      Active Job Listing
+     </p>
+    </div>
+    <div class="stat">
+     <h3>
+      98%
+     </h3>
+     <p>
+      Client Satisfaction Rate
+     </p>
+    </div>
+   </div>
+  </section>
+  <section class="section">
+   <h2 class="meme">
+    Featured Candidates
+   </h2>
+   <div class="candidates">
+    <div class="candidate">
+     <img height="50" src="" width="50"/>
+     <h3>
+      Candidate HD7291
+     </h3>
+     <p>
+      Full Stack Developer
+     </p>
+     <p>
+      5 years
+     </p>
+     <p>
+      INTJ - Architect
+     </p>
+     <p><b>
+      Highlight Projects:
+      </b>
+     </p>
+     <p>
+      - E-commerce platform
+     </p>
+     <p>
+      - AI-powered chatbot
+     </p>
+     <div class="skills">
+      <span>
+       React
+      </span>
+      <span>
+       Node.js
+      </span>
+      <span>
+       Python
+      </span>
+     </div>
+    </div>
+    <div class="candidate">
+     <img height="50" src="" width="50"/>
+     <h3>
+      Candidate HD8103
+     </h3>
+     <p>
+      UI/UX Designer
+     </p>
+     <p>
+      7 years
+     </p>
+     <p>
+      ENFP - Campaigner
+     </p>
+     <p><b>
+      Highlight Projects:
+      </b>
+     </p>
+     <p>
+      - Mobile Banking App
+     </p>
+     <p>
+      - Smart Home Interface
+     </p>
+     <div class="skills">
+      <span>
+       Figma
+      </span>
+      <span>
+       AdobeXD
+      </span>
+      <span>
+       Sketch
+      </span>
+     </div>
+    </div>
+    <div class="candidate">
+     <img  height="50" src="" width="50"/>
+     <h3>
+      Candidate HD7291
+     </h3>
+     <p>
+      Data Scientist
+     </p>
+     <p>
+      4 years
+     </p>
+     <p>
+      INTP - Logician
+     </p>
+     <p><b>
+      Highlight Projects:
+      </b>
+     </p>
+     <p>
+      - Predictive Analytics Tool
+     </p>
+     <p>
+      - Customer Segmentation Model
+     </p>
+     <div class="skills">
+      <span>
+       React
+      </span>
+      <span>
+       Node.js
+      </span>
+      <span>
+       Python   
+      </span>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="section">
+   <h2 class="ella">
+    Companies That Trust Harya
+   </h2>
+   <div class="companies">
+    <div class="company">
+     <img height="50" src="" width="50"/>
+     <h3>
+      TechCorp
+     </h3>
+     <p>
+      50 hires through Harya
+     </p>
+    </div>
+    <div class="company">
+     <img  height="50" src="" width="50"/>
+     <h3>
+      InnovateSoft
+     </h3>
+     <p>
+      35 hires through Harya
+     </p>
+    </div>
+    <div class="company">
+     <img  height="50" src="" width="50"/>
+     <h3>
+      DataDynamics
+     </h3>
+     <p>
+      28 hires through Harya
+     </p>
+    </div>
+    <div class="company">
+     <img height="50" src="" width="50"/>
+     <h3>
+      DataDynamics
+     </h3>
+     <p>
+      42 hires through Harya
+     </p>
+    </div>
+   </div>
+  </section>
+  <section class="section">
+   <h2 class="kudu">
+   What Our Users Say
+   </h2>
+   <div class="container">
+    <i class="fas fa-arrow-left arrow" onclick="prevTestimonial()">
+    </i>
+    <div class="testimonial" id="testimonial">
+     <div class="testimonial-content">
+      <img alt="Profile picture" height="50" id="testimonial-img" src="coat.jpg" width="50"/>
+      <div class="testimonial-text">
+       <h4 id="testimonial-name">
+        Mohamed Bangura
+       </h4>
+       <h5 id="testimonial-name">
+        Software Engineer
+       </h5>
+       <p class="testimonial-quote" id="testimonial-quote">
+        “Harya helped me find my dream job! The platform is intuitive and the job matches were spot-on.”
+       </p>
+      </div>
+     </div>
+    </div>
+    <i class="fas fa-arrow-right arrow" onclick="nextTestimonial()">
+    </i>
+   </div>
+  <section class="cta">
+   <h2>
+    Ready to Find Perfect Match
+   </h2>
+   <p>
+    Join Harya today and connect with top employers in your field
+   </p>
+   <a href="create.html">
+   <button>
+    Get Started
+   </a>
+   </button>
+  </section>
+  <footer class="footer">
+   <div class="footer-content">
+    <div>
+     <img alt="Harya Logo" height="40" src="darklogo.jpg" width="40"/>
+     <p>
+      Connecting top talent with innovative companies to create perfect career matches.
+     </p>
+    </div>
+    <div>
+     <h3>
+      Quick Links
+     </h3>
+     <p>
+      <a href="#">
+       Home
+      </a>
+     </p>
+     <p>
+      <a href="#">
+       Find Jobs
+      </a>
+     </p>
+     <p>
+      <a href="#">
+       For Employers
+      </a>
+     </p>
+     <p>
+      <a href="#">
+       About Us
+      </a>
+     </p>
+    </div>
+    <div>
+     <h3>
+      Contact Us
+     </h3>
+     <p>
+      info@harya@.com
+     </p>
+     <p>
+      <a href="#">
+       +1(234)567-890
+      </a>
+     </p>
+     <p>
+      <a href="#">
+       123 Tech Street, San Francisco, CA
+      </a>
+     </p>
+     <p>
+      <a href="#">
+       94105
+      </a>
+     </p>
+    </div>
+     <div class="column">
+    <h3>
+     Follow Us
+    </h3>
+    <div class="social-icons">
+     <a href="https://www.facebook.com" target="_blank">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a href="https://www.twitter.com" target="_blank">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a href="https://www.instagram.com" target="_blank">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+    </div>
+   </div>
+   </div>
+  </footer>
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+     <h2>
+      Login
+     </h2>
+     <button class="employee">
+      Login as Employee
+     </button>
+     <button class="employer">
+      Login as Employer
+     </button>
+     <button onclick="closeModal()">
+      Close
+     </button>
+    </div>
+   </div>
+   <div class="modal" id="signupModal">
+    <div class="modal-content">
+     <h2>
+      Sign Up
+     </h2>
+     <a href="welcome.html">
+     <button class="employee">
+      Sign Up as Employee
+     </a>
+     </button>
+     <button class="employer">
+      Sign Up as Employer
+     </button>
+     <button onclick="closeModal()">
+      Close
+     </button>
+    </div>
+   </div>
+   <script src="hary.js"></script>
+ </body>
+</html>
