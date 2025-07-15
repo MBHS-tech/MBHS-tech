@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="description" content="Modern e-commerce platform with a wide range of products" />
+    <meta name="keywords" content="ecommerce, shopping, products, online store" />
+    <meta name="author" content="E-Commerce Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="%PUBLIC_URL%" />
+    <meta property="og:title" content="E-Commerce Store - Shop the Best Products Online" />
+    <meta property="og:description" content="Discover amazing products at great prices. Fast shipping, secure payments, and excellent customer service." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="%PUBLIC_URL%" />
+    <meta property="twitter:title" content="E-Commerce Store - Shop the Best Products Online" />
+    <meta property="twitter:description" content="Discover amazing products at great prices. Fast shipping, secure payments, and excellent customer service." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preconnect to external domains for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    
+    <title>E-Commerce Store - Shop the Best Products Online</title>
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "E-Commerce Store",
+      "url": "%PUBLIC_URL%",
+      "description": "Modern e-commerce platform with a wide range of products",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "%PUBLIC_URL%/products?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!-- Loading fallback -->
+    <div id="loading-fallback" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #f9fafb; z-index: 9999; display: flex; align-items: center; justify-content: center;">
+      <div style="text-align: center;">
+        <div style="width: 40px; height: 40px; border: 4px solid #e5e7eb; border-top: 4px solid #3b82f6; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 16px;"></div>
+        <p style="color: #6b7280; font-family: system-ui, sans-serif;">Loading E-Commerce Store...</p>
+      </div>
+    </div>
+    
+    <style>
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* Hide loading fallback when React loads */
+      #root:not(:empty) ~ #loading-fallback {
+        display: none !important;
+      }
+    </style>
+  </body>
+</html>
